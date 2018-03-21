@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <a href="/logout">Logout</a>
+        <form action="/success" method="GET">
+            {% csrf_token %}
+        <h1>Welcome! {{request.session.name}}</h1>
+    </form>
+    </head>
+</html>
